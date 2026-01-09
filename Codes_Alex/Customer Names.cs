@@ -41,7 +41,7 @@ public class CustomerNames: MonoBehaviour
         List<int> randomVals = new List<int>();
         for (int i = 0; i < itemCount; i++)
         {
-            randomVals.Add(Random.Range(1, 3)); // assuming 0–4 possible food types
+            randomVals.Add(Random.Range(1, 3)); // assuming 0â€“4 possible food types
            
         }
 
@@ -49,3 +49,4 @@ public class CustomerNames: MonoBehaviour
         orderController.SetupCustomerOrder(_currentName, randomVals);
     }
 }
+
