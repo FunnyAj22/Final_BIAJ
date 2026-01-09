@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 685ffa36ea9aeba4e8aebb6e5748bf4f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Baguette_Concept: {fileID: 21300000, guid: 4fe51d51210d8e444854222f63a94815, type: 3}
+  - Coke_Concept: {fileID: 21300000, guid: 34cb4ba0881ea194a86f17c4e21cc540, type: 3}
+  - Fish_Concept: {fileID: 21300000, guid: 4c198a5bf6dafde48879f903f3d831cb, type: 3}
+  - Hambone_Concept: {fileID: 21300000, guid: 0105721bfe8a0234593ba27b6589bfe5, type: 3}
+  - Pancake_Concept: {fileID: 21300000, guid: b3be1f4507fc8f94997dfd6e8f241638, type: 3}
+  - Pie_Concept: {fileID: 21300000, guid: 1d004d32b67f61d43a034a89b8aa132e, type: 3}
+  - Pizza_Concept: {fileID: 21300000, guid: c7dc6f5c18eaad8428c7bc2726bdb498, type: 3}
+  - Splurg_Concept: {fileID: 21300000, guid: f2808d1977d9aef4a8e96f6ba44a9a69, type: 3}
+  - Squid_Stew_Concept: {fileID: 21300000, guid: 175dcf6c2afba834d899e55e73e92a56, type: 3}
+  - Taco_Concept: {fileID: 21300000, guid: 630d4befeccac9f4ea00957bdff7f41b, type: 3}
+  - spritePrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
