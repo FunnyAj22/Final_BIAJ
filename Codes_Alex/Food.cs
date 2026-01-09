@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Food : MonoBehaviour
 {
-    [Header("Food Sprites by ID (0–9)")]
+    [Header("Food Sprites by ID (0â€“9)")]
     public Sprite Baguette_Concept;
     public Sprite Coke_Concept;
     public Sprite Fish_Concept;
