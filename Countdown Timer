@@ -1,0 +1,53 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class TimerSlider : MonoBehaviour
+{
+    [Header("Timer Settings")]
+    public Slider slider;          // Reference to the UI Slider
+    public float duration = 10f;   // Total time in seconds
+    public bool isCountdown = true; // True = countdown, False = count-up
+
+    private float timeElapsed;
+
+    void Start()
+    {
+        if (slider == null)
+        {
+            Debug.LogError("Slider not assigned in the Inspector!");
+            enabled = false;
+            return;
+        }
+
+        // Initialize slider values
+        slider.minValue = 0;
+        slider.maxValue = duration;
+        slider.value = isCountdown ? duration : 0;
+
+        // Start the timer
+        StartCoroutine(RunTimer());
+    }
+
+    IEnumerator RunTimer()
+    {
+        timeElapsed = 0f;
+
+        while (timeElapsed < duration)
+        {
+            timeElapsed += Time.deltaTime;
+
+            if (isCountdown)
+                slider.value = Mathf.Clamp(duration - timeElapsed, 0, duration);
+            else
+                slider.value = Mathf.Clamp(timeElapsed, 0, duration);
+
+            yield return null; // Wait until next frame
+        }
+
+        // Timer finished
+        Debug.Log("Timer Complete!");
+    }
+}
